@@ -18,8 +18,8 @@
 }
 .btn_base:hover {
 	background-color: $white-color;
-	border: 2px solid $green-color;
-	color: $green-color;
+	border: 2px solid $white-color;
+	color: $black;
 }
 .btn_base::after {
     position: absolute;
@@ -35,5 +35,5 @@
     right: 2rem;
 }
 .btn_base:hover::after{
-    background-color: $green-color;
+    background-color: $black;
 }

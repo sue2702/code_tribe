@@ -1,6 +1,7 @@
 @use './header' as *;
 @use './helpers' as *;
 @use './variables' as *;
+@use './container_hero' as *;
 
 
 
@@ -10,8 +11,10 @@ html{
 
 .wrapper{
     margin: 0 auto;
-    max-width: 192rem;
+    
     min-height: 100vh;
     width: 100%;
-   
+    max-width: 192rem;
+    overflow: hidden;
+
 }
