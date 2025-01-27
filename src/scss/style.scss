@@ -17,4 +17,15 @@ html{
     max-width: 192rem;
     overflow: hidden;
 
+    background-image: url(../imgs/bg_hero.png);
+    background-position: top;
+    background-repeat: no-repeat;
+
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

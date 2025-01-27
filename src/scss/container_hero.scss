@@ -1,35 +1,27 @@
 @use './variables' as *;
 
 .container_hero {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-
-	gap: 10rem;
-
-	margin: 0 auto;
-	max-width: 192rem;
+    margin: 13rem auto;
+    max-width: 100%;
 	min-height: 100vh;
-	position: relative;
+	
 }
-.container_hero::before {
-	position: absolute;
-	z-index: -10;
-	content: url(../imgs/bg_hero.png);
-	top: -14rem;
-	left: 0px;
-}
-.hero_info {
-	max-width: 64rem;
-	max-height: 22rem;
-	margin-left: 16rem;
+
+.hero.info {
+	display: flex;
+	flex-direction: column;
+    width: 119rem;
+    margin-left: 16rem;
+    gap: 2rem;
 	& h1 {
+        max-width: 64rem;
 		font-family: Righteous;
 		font-size: 5.6rem;
 		font-weight: 400;
 		line-height: 1.2;
 	}
 	& p {
+        max-width: 64rem;
 		font-family: Roboto;
 		font-size: 2rem;
 		font-weight: 400;
@@ -39,10 +31,9 @@
 }
 
 .btn_container {
-    margin-left: 16rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 	& span {
 		display: block;
 		max-width: 59rem;
@@ -51,5 +42,49 @@
 		font-size: 2rem;
 		font-weight: 400;
 		line-height: 1.2;
+	}
+}
+
+.container_start_code {
+	margin: 0 auto;
+	display: flex;
+    max-width: 102rem;
+	width: 100%;
+	min-height: 100vh;
+	gap: 4rem;
+
+    & .info{
+        display: flex;
+        flex-direction: column;
+        max-width: 64rem;
+        gap: 2rem;
+        & h1 {
+            max-width: 64rem;
+            font-family: Righteous;
+            font-size: 5.6rem;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+        & p {
+            max-width: 64rem;
+            font-family: Roboto;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            color: $text-grey;
+        }
+      
+    }
+}
+
+.start_code_image {
+	width: 48rem;
+	height: 44rem;
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: center;
 	}
 }
