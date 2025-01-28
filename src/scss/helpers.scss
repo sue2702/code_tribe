@@ -3,7 +3,7 @@
 .btn_base {
 	display: block;
 	text-decoration: none;
-	width: 22rem;
+	width: 30rem;
 	height: 5.6rem;
 	color: $white-color;
 	background-color: $green-color;
@@ -29,11 +29,27 @@
     mask-repeat: no-repeat;
     background-color: $white-color;
 	content: url(../imgs/vector.png);
-	width: 3.2rem;
-	height: 3.2rem;
-    top: 0.9rem;
-    right: 1rem;
+	width: 2.8rem;
+	height: 2.8rem;
+    top: 1rem;
+    right: 2.2rem;
 }
 .btn_base:hover::after{
     background-color: $black;
+}
+
+
+.btn_container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	& span {
+		display: block;
+		max-width: 59rem;
+		max-height: 7.6rem;
+		font-family: Roboto;
+		font-size: 2rem;
+		font-weight: 400;
+		line-height: 1.2;
+	}
 }
